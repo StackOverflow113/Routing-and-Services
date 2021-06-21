@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+.bnt-xl {
+    background-color: rgb(2, 22, 48);
+    border-color: grey;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+}
+
+.bnt-xl:hover {
+    background-color: rgb(2, 22, 48);
+    border-radius: rgb(2, 22, 48);
+    border-width: 4px;
+}
