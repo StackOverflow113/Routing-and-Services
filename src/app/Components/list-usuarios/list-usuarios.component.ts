@@ -7,7 +7,8 @@ import { UsuarioService } from '../../services/usuario.service';
   styleUrls: ['./list-usuarios.component.css']
 })
 export class ListUsuariosComponent implements OnInit {
-
+  listUsuarios: any[] = [];
+  loading = true;
   constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
@@ -15,7 +16,8 @@ export class ListUsuariosComponent implements OnInit {
   }
   getUsers(): void {
     this.usuarioService.getUsers().subscribe(data => {
-      console.log(data);
+      this.listUsuarios = data.data;
+      this.loading = false;
     })
   }
 }

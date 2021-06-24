@@ -10,6 +10,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { ListUsuariosComponent } from './Components/list-usuarios/list-usuarios.component';
 import { LayoutComponent } from './Components/layout/layout.component';
 import { CardsComponent } from './Components/list-usuarios/cards/cards.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CardsComponent } from './Components/list-usuarios/cards/cards.component
     NavbarComponent,
     ListUsuariosComponent,
     LayoutComponent,
-    CardsComponent
+    CardsComponent,
+    UsuarioComponent
   ],
   imports: [
     BrowserModule,
